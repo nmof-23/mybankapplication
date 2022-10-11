@@ -37,6 +37,7 @@ public class GeneralExceptionAdvisor extends ResponseEntityExceptionHandler {
     public ResponseEntity<?> generalExceptionHandler(Exception exception) {
         return new ResponseEntity<>(exception.getMessage() , HttpStatus.INTERNAL_SERVER_ERROR);
 
+
     }
 
 
